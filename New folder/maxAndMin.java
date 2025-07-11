@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class maxAndMin{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Entet the size of array : ");
+    int size=sc.nextInt();
+    int a[]=new int[size];
+    System.out.println("Enter the index value of array");
+    for(int i=0;i<size;i++){
+        a[i]=sc.nextInt();
+    }
+    int max=a[0];
+    int min =a[0];
+    
+    for(int i=0;i<size;i++){
+        if(a[i]>max){
+            max=a[i];
+        }
+        if(a[i]<min){
+            min=a[i];
+        }
+    }
+   System.out.println("Largest no. is :" + max);
+   System.out.println("Smallest no. is :" + min);
+        sc.close();
+    }
+    }
